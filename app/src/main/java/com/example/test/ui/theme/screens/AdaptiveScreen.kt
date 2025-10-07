@@ -11,14 +11,10 @@ fun AdaptiveScreen() {
 
     when (windowSizeClass.widthSizeClass){
         WindowWidthSizeClass.Compact -> {
-
+            HomeScreenCompact()
         }
-        WindowWidthSizeClass.Medium->{
-
-        }
-        WindowWidthSizeClass.Expanded->{
-
-        }
+        WindowWidthSizeClass.Medium->{}
+        WindowWidthSizeClass.Expanded->{}
 
     }
 }

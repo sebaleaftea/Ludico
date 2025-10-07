@@ -1,6 +1,5 @@
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.*
 import androidx.compose.material3.*
 import androidx.compose.material3.Text
 import androidx.compose.material3.Icon
@@ -56,10 +55,6 @@ fun HomeScreen(
                         IconButton(onClick = {
                             scope.launch { drawerState.open() }
                         }) {
-                            Icon(
-                                imageVector = Icons.Default.Menu,
-                                contentDescription = "Menú"
-                            )
                         }
                     }
                 )

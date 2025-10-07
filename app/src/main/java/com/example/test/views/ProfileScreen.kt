@@ -1,8 +1,5 @@
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.Person
+
 import androidx.compose.material3.*
 import androidx.compose.material3.Text
 import androidx.compose.material3.Icon
@@ -46,10 +43,7 @@ fun ProfileScreen(
                         },
                         label = { Text(text = screen.route) },
                         icon = {
-                            Icon(
-                                imageVector = if (screen == Screen.Home) Icons.Default.Home else Icons.Default.Person,
-                                contentDescription = screen.route
-                            )
+
                         }
                     )
                 }

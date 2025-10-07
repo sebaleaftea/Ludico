@@ -16,9 +16,11 @@ import androidx.navigation.compose.rememberNavController
 
 import kotlinx.coroutines.flow.collectLatest
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.test.navigation.NavigationEvent
 import com.example.test.navigation.Screen
 import com.example.test.ui.theme.TestTheme
+import com.example.test.ui.theme.screens.AdaptiveScreen
 import com.example.test.viewmodels.MainViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -26,6 +28,22 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            TestTheme {
+                AdaptiveScreen()
+            }
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewDos(){
+    TestTheme {
+        AdaptiveScreen()
+    }
+}
+
+/* {
             TestTheme {
                 // ViewModel y NavController
                 val viewModel: MainViewModel = viewModel()
@@ -73,6 +91,4 @@ class MainActivity : ComponentActivity() {
                     }
                 }
             }
-        }
-    }
-}
+        }  */
